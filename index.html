@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<div class="home">
+    <div class="container-fluid">
+        <div class="row fitted">
+            <div class="col-md-2 index-pane">
+                {% include nav.html %}
+            </div>
+            <div class="col-md-4 left-pane">
+                <section class="content-area list">
+                    <h2><a href="/articles">Articles</a></h2>
+                    <ul class="tight">
+                        {% for post in site.posts %}
+                        <li>
+                            {% if post.externalUrl %}
+                            <h4>
+                                <a href="{{post.externalUrl}}">{{post.title}}</a>
+                            </h4>
+                            {% else %}
+                            <h4>
+                                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </h4>
+                            {% endif %}
+                            <!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                            {% if post.summary %}
+                            <p>{{post.summary}}</p>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a href="/articles">More articles...</a></p>
+                </section>
+            </div>
+            <div class="col-md-4 right-pane">
+                <section class="content-area list">
+                    <h2><a href="/projects">Projects</a></h2>
+                    <ul class="tight">
+                        {% for proj in site.data.projects  %}
+                        <li>
+                            <h4>
+                                <a href="{{proj.url}}">{{proj.name}}</a>
+                            </h4>
+                            <p>
+                                {{proj.summary}}
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a href="/projects">More projects...</a></p>
+                </section>
+            </div>
+            <div class="col-md-2 alt-pane">
+                <section class="content-area list">
+                    <ul class="gallery">
+                        {% for img in site.data.images limit: 5 %}
+                        <li>
+                            <img src="{{img.src}}" alt="{{img.name}}" />
+                            <br />
+                            <span>{{img.name}}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a href="/art">More art...</a></p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

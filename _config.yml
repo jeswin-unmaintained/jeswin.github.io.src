@@ -1,0 +1,13 @@
+# Site settings
+title: Jeswin Kumar - Blog and Projects
+email: jeswinpk@agilehead.com
+description: > # this means to ignore newlines until "baseurl:"
+  My Personal Blog and assorted Open Source Projects
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.jeswin.org" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+lessc: /usr/local/bin/lessc
+
+# Build settings
+markdown: kramdown

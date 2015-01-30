@@ -1,0 +1,42 @@
+.page-content { background: white; }
+
+.index-pane, .left-pane, .right-pane, .alt-pane { padding-top: 12px }
+.index-pane { margin-top: 12px; }
+.left-pane, .right-pane { padding-bottom: 64px; padding-left: 32px; background: #f8f8f8; }
+.alt-pane {}
+
+.index-pane {
+    .navbar { max-width: 120px; }
+}
+
+.right-pane {
+    background: #E6EEF4; padding-left: 32px;
+
+    h2 {
+        a { color: brown; }
+    }
+}
+
+.alt-pane {
+    margin: 0; padding: 0;
+    ul {
+        padding: 0 8px;
+        li {
+            text-align: center; padding: 2px; font-size: 11px; line-height: 1em;
+            img { width: 90%; }
+            a { color: #aaa }
+        }
+    }
+}
+
+.content-area {
+    max-width: 720px; margin: auto;
+
+    ul {
+        margin: 0; padding: 0;
+        li { padding: 1em; }
+        &.tight li {
+            padding: 0.2em
+        }
+    }
+}

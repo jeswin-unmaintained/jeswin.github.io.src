@@ -1,0 +1,23 @@
+-   name: Ceramic
+    url: http://www.jeswin.org/ceramic
+    summary: Based on JSON-Schema, ceramic can map simple JSON into domain entities used in the application. It can also validate entities against constraints specified in the schema.
+
+-   name: Ceramic ODM
+    url: http://www.jeswin.org/ceramic-db
+    summary: Object Database Mapper with ES6 Generators-based async API. Currently supports MongoDb.
+
+-   name: Ceramic Dictionary Parser
+    url: http://www.jeswin.org/ceramic-dictionary-parser
+    summary: Parse an Http Request Body and convert them into entities using Ceramic.
+
+-   name: Crankshaft Build System
+    url: http://www.jeswin.org/crankshaft
+    summary: Crankshaft is a very simple build library for node.js (using ES6 generators). It prefers code over configuration and encourages you to use stuff you already know like bash commands and built-in node functions.
+
+-   name: Big Brother
+    url: http://www.jeswin.org/big-
+    summary: .Net Debugger for monitoring application behaviour at runtime. Can log method arguments and return values. A possible use would be in auto-generating unit test cases.
+
+-   name: Asynchrony
+    url: http://www.jeswin.org/ceramic-dictionary-parser
+    summary: lorem ipsum dolor sit olam bator elem
